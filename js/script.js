@@ -301,14 +301,9 @@ function tablePopup() {
   $('.tusage td:eq(0)').click(() => popupContent(7));
 }
 
-function firstTime() {
-  $('.first-time').click(() => popupContent(6));
-}
-
 
 
 $(document).ready(function() {
-  // firstTime();
   cardsData();
   cardsData2();
   tableData();
