@@ -59,7 +59,7 @@ const multiClusterDataTable = {
 
   id: ['Prism Central West', 'Prism Central East', 'Prism Central Global', 'Calm  License PC West', 'Calm License PC East', 'Calm License PC Global','Prism Central West'],
   type: ['Prism Pro', 'Prism Pro', 'Prism Pro', 'Calm', 'Calm', 'Calm', 'Microsegmentation'],
-  unit: ['Node', 'Node', 'Node', 'VM Pack', 'VM Pack', 'VM Pack',`<h3 style='color:red'>Node</h3>`],
+  unit: ['Node', 'Node', 'Node', 'VM Pack', 'VM Pack', 'VM Pack',`Node`],
   purchased: [200, 200, 200, 50, 30, 50, 200],
   use: [200, 200, 200, 53, 36, 44,200],
   Expiration: ['12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020']
