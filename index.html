@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="https://john00123.github.io/ntnx-tile/font/font.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Portal License</title>
+</head>
+
+<body class='index'>
+  <header>
+      <img src='img/x_logo.svg'/>
+      <a href='home.html'>Home</a>
+      <a>Documentation</a>
+      <a>Support</a>
+      <a>Downloads</a>
+      <a href='index.html' style='color:white;'> Licenses</a>
+      <a class='right'>John Doe</a>
+  </header>
+
+  <aside>
+    <h1>Licenses</h1>
+    <div class='separator'></div>
+    <ul>
+      <li><a href='overview.html'>Summary</a></li>
+      <li><a href='purchases.html'>Purchases</a></li>
+      <li class='sidebar-selected'>
+      <a href='index.html'>Cluster Usage</a></li>
+      <li>
+      <a href='multi-cluster.html'>Multi-cluster Usage</a></li>
+    </ul>
+  </aside>
+
+  <article class="container">
+    <div class="actions">
+      <button class="primary cluster-license"><span> Cluster License</span></button>
+      <!-- <button class="primary cluster-license" style='margin-left:10px'><span> PC Licenses</span></button> -->
+      <button class="secondary actions-dropdown"><span>Actions</span>
+
+        <div class='floater'>
+        <a class='update-popup'> New Node License</a><br>
+        <a class='manage-addons-popup'> Manage Addons</a><br>
+        <a class= 'unlicense-cluster-popup'> Unlicense Cluster </a><br>
+        <a class='reclaim-popup'> Reclaim Unused Licenses </a>
+        </div>
+      </button>
+      <div class='spacer'></div>
+      <button class="secondary first-time"><span>Learn More</span></button>
+    </div>
+
+    <!-- info cards -->
+    <div class="deck"></div>
+
+    <!-- table -->
+    <table class="table tusage">
+      <thead>
+        <tr class='table-header'>
+          <th>Cluster Name</th>
+          <th>License Type</th>
+          <!-- <th>coins Purchased</th> -->
+          <th>Core licenses</th>
+          <th>HDD licenses</th>
+          <th>Flash licenses</th>
+
+          <th>Expiration date</th>
+        </tr>
+      </thead>
+      <tbody class='usage'></tbody>
+    </table>
+
+  </article>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="js/script.js" charset="utf-8"></script>
+  <script src="js/data.js" charset="utf-8"></script>
+  <script src="js/popup.js" charset="utf-8"></script>
+
+</body>
+
+</html>
