@@ -1,5 +1,3 @@
-/// TODO: Quick action change to License Acropolis (A/B Testing)
-/// TODO: Manage Acropolis Addons
 /// TODO: Core HHD SSD.
 ///
 

@@ -2113,6 +2113,10 @@ input[type="file"] {
   margin-bottom: 20px;
 }
 
+.col > * {
+  width: calc(50% - 10px);
+}
+
 .current-consumption {
   position: relative;
 }

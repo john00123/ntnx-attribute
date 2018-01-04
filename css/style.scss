@@ -220,6 +220,7 @@ header {
 	overflow-x: hidden;
 }
 //actions
+
 .actions {
 	@include flex(center, flex-start, row);
 	@include size(auto, 100%);
@@ -1226,6 +1227,11 @@ input[type="file"] {
 	background-color: #1E85EF;
 	border-radius: 4px;
 	margin-bottom: 20px;
+}
+
+
+.col > *{
+	width: calc(50% - 10px);
 }
 
 .current-consumption {

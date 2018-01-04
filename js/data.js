@@ -4,8 +4,8 @@ const multiClusterData2 = {
 }
 
 const cardData = {
-  cardBody: ['Prosql_3002', 'Ntnx_Marketing_001',''],
-  cardSecondary: ["Is consuming the most licenses", 'expires in 30 days',''],
+  cardBody: ['Prosql_3002', 'Ntnx_Marketing_001'],
+  cardSecondary: ["Is consuming the most licenses", 'expires in 30 days'],
 }
 
 const fsChecked = `
