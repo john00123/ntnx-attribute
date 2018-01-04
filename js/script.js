@@ -1,3 +1,9 @@
+/// TODO: Quick action change to License Acropolis (A/B Testing)
+/// TODO: Manage Acropolis Addons
+/// TODO: Core HHD SSD.
+///
+
+
 //esc
 
 $(document).keyup(e => {
@@ -373,11 +379,11 @@ $(document).ready(function() {
 
 
   //initial popup
-  if ($('body').hasClass('index')) {
-    if (!sessionStorage.alreadyClicked) {
-      popupContent(6);
-      sessionStorage.alreadyClicked = 1;
-    }
-  }
+  // if ($('body').hasClass('index')) {
+  //   if (!sessionStorage.alreadyClicked) {
+  //     popupContent(6);
+  //     sessionStorage.alreadyClicked = 1;
+  //   }
+  // }
 
 });

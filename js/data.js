@@ -1,11 +1,11 @@
 const multiClusterData2 = {
   cardBody: ['600 of 600','132 of 135', '200 of 200'],
-  cardSecondary: ['Prism Pro Licenses in use ', 'Calm Licenses in use', 'Prism Add-On Licenses in use'],
+  cardSecondary: ['Prism Pro Licenses in use ', 'Calm Licenses in use', 'Flow Licenses in use'],
 }
 
 const cardData = {
   cardBody: ['Prosql_3002', 'Ntnx_Marketing_001',''],
-  cardSecondary: ["Is consuming the most licenses · 400 licenses", 'Expires in 30 days · 12/12/2020',''],
+  cardSecondary: ["Is consuming the most licenses", 'expires in 30 days',''],
 }
 
 const fsChecked = `
@@ -47,8 +47,8 @@ const licensePrices = [{
 
 const purchaseDataTable = {
   id: ['AOS-PRO-CORE-4YRS-133550', 'AOS-PRO-HDD-4YRS-133563', 'AOS-PRO-FLASH-4YRS-133540','FILE-SERVER-CORE-4YRS-133643','FILE-SERVER-HDD-4YRS-133956','FILE-SERVER-FLASH-4YRS-133103', ],
-  type:['Acropolis Pro', 'Acropolis Pro','Acropolis,Pro','File Sever','File Server','FileServer'],
-  capacity:['Core','HDD','Flash','Core','HDD','Flash'],
+  type:['Acropolis Pro', 'Acropolis Pro','Acropolis Pro','File Sever','File Server','FileServer'],
+  capacity:['Cores','HDD','Flash','Cores','HDD','Flash'],
   purchased: [92, 113, 74, 92, 113, 74, 63, 103, 96, 113, 76, 54, 76, 98, 63, 103],
   use: [90, 113, 72, 90, 113, 72,63, 102, 96, 11, 74, 50, 76, 88, 61, 102],
   Expiration: ['12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020', '12/12/2020']
@@ -58,7 +58,7 @@ const purchaseDataTable = {
 const multiClusterDataTable = {
 
   id: ['Prism Central West', 'Prism Central East', 'Prism Central Global', 'Calm  License PC West', 'Calm License PC East', 'Calm License PC Global','Prism Central West'],
-  type: ['Prism Pro', 'Prism Pro', 'Prism Pro', 'Calm', 'Calm', 'Calm', 'Microsegmentation'],
+  type: ['Prism Pro', 'Prism Pro', 'Prism Pro', 'Calm', 'Calm', 'Calm', 'Flow'],
   unit: ['Node', 'Node', 'Node', 'VM Pack', 'VM Pack', 'VM Pack',`Node`],
   purchased: [200, 200, 200, 50, 30, 50, 200],
   use: [200, 200, 200, 53, 36, 44,200],

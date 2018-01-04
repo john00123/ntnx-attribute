@@ -1,6 +1,6 @@
 //Comment for compiler
-@import '../../_ntnx/variables';
-@import '../../_ntnx/mixins';
+@import '../../../_ntnx/variables';
+@import '../../../_ntnx/mixins';
 @import 'home.scss';
 @import 'element.scss';
 @import 'overview.scss';
@@ -229,6 +229,7 @@ header {
 		@include primary;
 		position: relative;
 		padding-left: 30px;
+		font-weight: 600;
 
 		&::after,
 		&::before {
@@ -812,6 +813,7 @@ Popup
 		cursor: pointer;
 	}
 
+
 	&::after,
 	&::before {
 		content: '';
@@ -1181,6 +1183,11 @@ input[type="file"] {
 		margin-bottom: 0;
 		line-height: 9pt;
 	}
+}
+.asterix{
+	margin-top: 20px;
+	width: 100%;
+	color: $font-color-2;
 }
 
 .show {

@@ -683,6 +683,7 @@ header .right {
   outline: none;
   position: relative;
   padding-left: 30px;
+  font-weight: 600;
 }
 
 .actions .primary:hover {
@@ -2063,6 +2064,12 @@ input[type="file"] {
   margin-left: 10px;
   margin-bottom: 0;
   line-height: 9pt;
+}
+
+.asterix {
+  margin-top: 20px;
+  width: 100%;
+  color: #627386;
 }
 
 .show {
