@@ -103,11 +103,8 @@ function multiPopup() {
 
   $('.reclaim').click(function() {
     $('.popup').addClass('second');
-    layer2(1);
-    setTimeout(countNumbers(), 600);
-    cardData.cardBody[1] += 40000;
-    $('.card:eq(1) h4').text(cardData.cardBody[1]);
-    $('aside h4').text(`${cardData.cardBody[1]} Coins Available`);
+    layer2(2);
+
   });
 
   $('.manage-addons').click(() => {
@@ -317,7 +314,7 @@ $(document).ready(function() {
   multiClusterData();
   $('.reclaim-popup').click(() => {
     popupContent(1)
-    $('.popup-header').after(`<div class='mutli-line-info'><p style='line-height:1.5;'> Make sure you update Prism Central licenses too, in order to retrieve all available coins.</p></div>`);
+    $('.popup-header').after(`<div class='mutli-line-info'><p style='line-height:1.5;'> Make sure you update Prism Central licenses too, in order to retrieve all available licenses.</p></div>`);
     $('.banner').toggle();
     $('.popup-header').css('border-bottom', 'none');
     $('.banner').slideDown();
