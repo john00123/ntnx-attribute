@@ -1072,7 +1072,7 @@ Cards
 }
 
 details {
-  margin: 20px 0;
+  margin: 20px 0 0 0;
 }
 
 summary {
@@ -1178,7 +1178,7 @@ td {
 td:last-child {
   margin-left: -50px;
   position: relative;
-  right: 15px;
+  /* right: 15px; */
 }
 
 .tusage td:last-child {
@@ -1297,7 +1297,9 @@ td kbd:hover, td kbd:hover::after, td kbd:hover::before {
   border-radius: 4px;
   pointer-events: none;
 }
-
+.small-table th{
+  line-height: 1.2;
+}
 .small-table th, .small-table tr, .small-table td {
   height: 32px;
 }

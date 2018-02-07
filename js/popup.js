@@ -75,15 +75,15 @@ const popupData = {
     <h2>Congratulations</h2>
     <p style='color:#22272E; width:100%; text-align:left' >
 
-  Your license changes have been successfully saved in the license summary file</p>
-    <details style='width:100%'>
-      <summary>See Transaction details</summary>
+  Your license changes have been successfully saved in the license summary file. Use the new license summary file to update the license state of your cluster.</p>
+    <details style='width:100%; display:flex; justify-content:center;'>
+      <summary>Transaction details</summary>
       <div class='table-outline' style='margin-top:15px; padding:1px 0;'>
         <table class='small-table'>
           <thead style='border-radius: 4px 4px 0 0'>
-            <th>Acropolis Lic./Capacity</th>
-            <th>Lic. Consumed</th>
-            <th>Lic. Remaining</th>
+            <th>Acropolis License</th>
+            <th>Consumed</th>
+            <th>Remaining</th>
             <th>Exp Date</th>
           </thead>
           <tr>
@@ -125,8 +125,6 @@ const popupData = {
         </table>
       </div>
     </details>
-
-    <p style='margin-top:-8px;'> Use the new license summary file to update the license state of your cluster.</p>
       `,
 
     //3
