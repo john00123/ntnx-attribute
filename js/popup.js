@@ -75,7 +75,7 @@ const popupData = {
     <h2>Congratulations</h2>
     <p style='color:#22272E; width:100%; text-align:left' >
 
-  Your license changes have been successfully saved in the license summary file. Use the new license summary file to update the license state of your cluster.</p>
+  Your license changes have been successfully saved in the license summary file. Use this new license summary file to update the license state of your cluster.</p>
     <details style='width:100%; display:flex; justify-content:center;'>
       <summary>Transaction details</summary>
       <div class='table-outline' style='margin-top:15px; padding:1px 0;'>
@@ -344,52 +344,52 @@ const layer2Data = {
 <h2>Congratulations</h2>
 <p style='color:#22272E; width:100%; text-align:left' >
 
-Your license changes have been successfully saved in the license summary file. Use the new license summary file to update the license state of your cluster.</p>
+Your licenses have been successfully reclaimed and saved in the license summary file. Use this new license summary file to update the license state of your cluster.</p>
 <details style='width:100%; display:flex; justify-content:center;'>
   <summary>Transaction details</summary>
   <div class='table-outline' style='margin-top:15px; padding:1px 0;'>
     <table class='small-table'>
       <thead style='border-radius: 4px 4px 0 0'>
         <th>Acropolis License</th>
-        <th>Consumed</th>
-        <th>Remaining</th>
+        <th>Reclaimed</th>
+
         <th>Exp Date</th>
       </thead>
       <tr>
         <td> Pro Core </td>
         <td> 8</td>
-        <td> 39 </td>
+
         <td> 10/10/2020 </td>
       </tr>
       <tr>
         <td> Pro HDD </td>
         <td> 12</td>
-        <td> 15 </td>
+
         <td> 10/10/2020 </td>
       </tr>
       <tr>
         <td> Pro Flash </td>
         <td> 4</td>
-        <td> 40 </td>
+
         <td> 10/10/2020 </td>
       </tr>
       <tr>
         <td> File Server Core</td>
         <td> 24</td>
-        <td> 100 </td>
+
         <td> 10/10/2020 </td>
       </tr>
       <tr>
         <td> File Server HDD</td>
         <td> 24</td>
-        <td> 100 </td>
+
         <td> 10/10/2020 </td>
       </tr>
       <tr>
         <td> File Server Flash</td>
         <td> 24</td>
-        <td> 100 </td>
-        <td style='text-align:right'> 10/10/2020 </td>
+
+        <td> 10/10/2020 </td>
       </tr>
     </table>
   </div>

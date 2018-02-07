@@ -1294,6 +1294,7 @@ td kbd:hover, td kbd:hover::after, td kbd:hover::before {
 }
 
 .small-table {
+  width: 100%;
   border-radius: 4px;
   pointer-events: none;
 }
