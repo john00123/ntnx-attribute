@@ -70,7 +70,7 @@ const popupData = {
     </div>`,
 
 
-    //2
+    //2 New cluster changes
     `
     <h2>Congratulations</h2>
     <p style='color:#22272E; width:100%; text-align:left' >
@@ -81,29 +81,46 @@ const popupData = {
       <div class='table-outline' style='margin-top:15px; padding:1px 0;'>
         <table class='small-table'>
           <thead style='border-radius: 4px 4px 0 0'>
-            <th>Lic/Capacity</th>
+            <th>Acropolis Lic./Capacity</th>
             <th>Lic. Consumed</th>
             <th>Lic. Remaining</th>
+            <th>Exp Date</th>
           </thead>
           <tr>
             <td> Pro Core </td>
             <td> 8</td>
             <td> 39 </td>
+            <td> 10/10/2020 </td>
           </tr>
           <tr>
             <td> Pro HDD </td>
             <td> 12</td>
             <td> 15 </td>
+            <td> 10/10/2020 </td>
           </tr>
           <tr>
             <td> Pro Flash </td>
             <td> 4</td>
             <td> 40 </td>
+            <td> 10/10/2020 </td>
           </tr>
           <tr>
-            <td> File Server </td>
+            <td> File Server Core</td>
             <td> 24</td>
             <td> 100 </td>
+            <td> 10/10/2020 </td>
+          </tr>
+          <tr>
+            <td> File Server HDD</td>
+            <td> 24</td>
+            <td> 100 </td>
+            <td> 10/10/2020 </td>
+          </tr>
+          <tr>
+            <td> File Server Flash</td>
+            <td> 24</td>
+            <td> 100 </td>
+            <td style='text-align:right'> 10/10/2020 </td>
           </tr>
         </table>
       </div>
@@ -256,18 +273,8 @@ const layer2Data = {
       <div class="popup-body panels">
 
         <div class='panel1'>
-        <h4 class= 'aos-data' style='margin-bottom:15px; margin-top:10px;'>License Requirements </h4>
-        <p style='margin-bottom:20px; margin-top:-3px; color:#22272E'>
-        This cluster has the following attributes than need to be licensed for each license type. </p>
-        <div class='flex-boxes'>
-          <span><kbd> 8 </kbd> Cores</span>
-          <span><kbd> 12 </kbd> TB HDD </span>
-          <span><kbd> 4 </kbd> TB Flash</span>
-        </div>
 
-        <div class='separator aos-data'  style='margin-top: 20px;'></div>
-
-        <h4 class= 'aos-data' style='  margin-top: -10px; margin-bottom:15px;'>Select primary license type </h4>
+        <h4 class= 'aos-data' style='  margin-top: 0px; margin-bottom:15px;'>Select primary license type </h4>
 
           <div class='license-pair aos-data'>
 
@@ -372,6 +379,7 @@ function layer2(i) {
       $('.overlay').fadeOut('slow');
       setTimeout(function() {
         popupContent(2);
+        $('.popup').css('width','500px');
       }, 200);
     }, 600);
 
