@@ -157,6 +157,9 @@ aside {
 	line-height: 30px;
 	padding:0 20px;
 	margin-left: -20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:pre-wrap;
 }
 
 .sidebar{
@@ -1441,7 +1444,7 @@ Media Queries
 		padding: 10px 20px;}
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 2000px) {
 
   .graphic{
 		padding: 0px 140px;
@@ -1457,6 +1460,9 @@ Media Queries
 		}
 	}
 
+	.sidebar {
+		display: none;
+	}
 	.container {
 		min-width: 320px;
 	}
@@ -1473,6 +1479,11 @@ Media Queries
 	aside {
 		display: none;
 	}
+
+	.sidebar {
+		display: initial;
+	}
+
 }
 @media (max-width: 420px) {
 	h4 code {
