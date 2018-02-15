@@ -401,6 +401,65 @@ p a:hover {
   letter-spacing: 2px;
 }
 
+.card {
+  position: relative;
+}
+
+.card-header {
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 8px 20px;
+  position: absolute;
+  top: 0;
+  border-bottom: 1px solid #F2F4F6;
+}
+
+.card-header h5 {
+  font: 500 14px/10px "nutanix_soft", san-serif;
+}
+
+.dropdown {
+  position: relative;
+  margin-right: 12px;
+}
+
+.dropdown::before {
+  content: '';
+  height: 8px;
+  width: 4px;
+  box-sizing: border-box;
+  position: absolute;
+  background: url("../img/double-arrow.svg");
+  display: block;
+  top: 0;
+  right: -12px;
+}
+
+.card-body {
+  padding: 20px;
+  height: 100%;
+}
+
+.card-body table {
+  width: 100%;
+}
+
+.card-body td {
+  border-bottom: 1px solid #F2F4F6;
+}
+
+.coin-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .widget-img {
   margin: 10px;
   border-radius: 4px;
@@ -413,6 +472,12 @@ p a:hover {
 
 .graph:hover {
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: calc(50% - 10px);
+  }
 }
 
 *[title] {
@@ -579,6 +644,106 @@ aside .sidebar-selected:after {
 
 aside .sidebar-selected:hover {
   color: initial;
+}
+
+.sidebar h3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: "";
+  height: 30px;
+  display: block;
+  line-height: 30px;
+  padding: 0 20px;
+  margin-left: -20px;
+}
+
+.sidebar {
+  border-right: 1px solid #F2F4F6;
+  height: 160px;
+  margin-top: -5px;
+  padding-top: 10px;
+}
+
+.legend {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px 20px;
+  border-top: 1px solid #F2F4F6;
+  border-bottom-right-radius: 4px;
+}
+
+.legend h3 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #627386;
+}
+
+.graphic {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 30px;
+}
+
+.graph-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 80%;
+  width: 8px;
+  box-sizing: border-box;
+  flex-direction: column-reverse;
+}
+
+.free {
+  background-color: #22A5F7;
+  flex-grow: 1;
+  border-radius: 1px 1px 0 0;
+}
+
+.used {
+  background-color: #D5DAE0;
+}
+
+.no-sidebar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: strech;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 160px;
+  margin-top: -15px;
+  margin-right: 20px;
+  border-bottom-right-radius: 4px;
+}
+
+.sidebar-selected {
+  color: initial;
+  background-color: #f4fbff;
+  position: relative;
+}
+
+.sidebar-selected::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 2px;
+  box-sizing: border-box;
+  background-color: #22A5F7;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 header img {
@@ -952,7 +1117,7 @@ button a {
 Cards
 ========================================================================== */
 .deck,
-.deck2, .deck3 {
+.deck2, .deck3, .deck4 {
   height: auto;
   width: 100%;
   box-sizing: border-box;
@@ -1072,7 +1237,7 @@ Cards
 }
 
 details {
-  margin: 20px 0 0 0;
+  margin: 20px 0;
 }
 
 summary {
@@ -1081,6 +1246,59 @@ summary {
 
 .card-body {
   padding: 23px 20px;
+}
+
+.card-body table tr td {
+  width: 100%;
+}
+
+.card-body .status {
+  right: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #627386;
+}
+
+.card-body .status::after {
+  content: '';
+  height: 6px;
+  width: 6px;
+  box-sizing: border-box;
+  background-color: #F55656;
+  position: absolute;
+  left: 4px;
+  top: 17px;
+  border-radius: 4px;
+}
+
+.badge {
+  background-color: #F55656;
+  color: white;
+  padding: 4px 5px;
+  border-radius: 4pc;
+}
+
+.select-light {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  font: 400 14px/22px "nutanix_soft", san-serif;
+  position: relative;
+  margin-right: 12px;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 20px;
+  background: url("../img/double-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tt {
+  color: #22A5F7;
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -1178,7 +1396,7 @@ td {
 td:last-child {
   margin-left: -50px;
   position: relative;
-  /* right: 15px; */
+  right: 15px;
 }
 
 .tusage td:last-child {
@@ -1294,13 +1512,10 @@ td kbd:hover, td kbd:hover::after, td kbd:hover::before {
 }
 
 .small-table {
-  width: 100%;
   border-radius: 4px;
   pointer-events: none;
 }
-.small-table th{
-  line-height: 1.2;
-}
+
 .small-table th, .small-table tr, .small-table td {
   height: 32px;
 }
@@ -2195,6 +2410,24 @@ Animation
 /* ==========================================================================
 Media Queries
 ========================================================================== */
+@media (min-width: 300px) {
+  .graphic {
+    padding: 0 30px;
+  }
+  .legend {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .graphic {
+    padding: 0px 140px;
+  }
+  .legend {
+    padding: 10px 130px;
+  }
+}
+
 @media (max-width: 980px) {
   .deck .card {
     width: 100%;
@@ -2209,6 +2442,9 @@ Media Queries
 }
 
 @media (max-width: 800px) {
+  .card {
+    width: 100%;
+  }
   aside {
     display: none;
   }

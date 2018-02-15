@@ -150,6 +150,85 @@ aside {
 	}
 }
 
+.sidebar h3{
+	@include flex(center, flex-start,'');
+	height: 30px;
+	display:block;
+	line-height: 30px;
+	padding:0 20px;
+	margin-left: -20px;
+}
+
+.sidebar{
+	border-right: 1px solid $border-color-3;
+	height: 160px;
+	margin-top: -5px;
+	padding-top: 10px;
+}
+
+.legend{
+	@include size(auto, 100%);
+	@include flex(center, space-between, row);
+	padding: 10px 20px;
+	border-top: 1px solid $border-color-3;
+	border-bottom-right-radius:4px;
+	h3{
+		font-size: 12px;
+		font-weight: 500;
+		color: $font-color-2;
+	}
+}
+
+.graphic{
+	@include size(100%, 100%);
+	@include flex(flex-end, space-between, row);
+	padding: 0 30px;
+}
+
+
+.graph-container{
+	@include flex(stretch, flex-end, column);
+	@include size( 80%, 8px);
+	flex-direction: column-reverse;
+}
+
+.free{
+	background-color: $blue-1;
+	flex-grow: 1;
+	border-radius: 1px 1px 0 0 ;
+}
+
+.used{
+	background-color: $border-color-2;
+}
+
+.no-sidebar{
+	@include flex(flex-end, strech, column);
+	flex-grow: 1;
+	// background-color: red;
+	height: 160px;
+	margin-top: -15px;
+	// padding-left 40px;
+	margin-right: 20px;
+	border-bottom-right-radius: 4px;
+}
+
+.sidebar-selected {
+	color: initial;
+	background-color: $semi-white-blue;
+	position: relative;
+	&::after {
+		content: '';
+		display: block;
+		@include size(100%, 2px);
+		background-color: $blue-1;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+}
+
 header img {
 	margin-right: 20px;
 }
@@ -425,7 +504,7 @@ button a {
 Cards
 ========================================================================== */
 .deck,
-.deck2, .deck3 {
+.deck2, .deck3, .deck4 {
 	@include size(auto, 100%);
 	@include flex(flex-start, space-between, row);
 	flex-wrap: wrap;
@@ -445,6 +524,7 @@ Cards
 	}
 	height: 100px;
 }
+
 
 .card {
 	@include secondary-alt;
@@ -504,8 +584,53 @@ summary{
 
 .card-body {
 	padding: 23px 20px;
+	table tr td{
+		width: 100%;
+	}
+	.status{
+		right: 0;
+		font-size: 12px;
+		font-weight: 500;
+		color:$font-color-2;
+		&::after{
+			content: '';
+			@include size(6px, 6px);
+			background-color: $red-1;
+			position: absolute;
+			left: 4px;
+			top: 17px;
+			border-radius: 4px;
+		}
+	}
 }
 
+.badge{
+	background-color: $red-1;
+	color:white;
+	padding: 4px 5px;
+	border-radius: 4pc;
+}
+
+.select-light{
+	-webkit-appearance: none;
+	appearance:none;
+	border: none;
+	outline: none;
+	font:$p;
+	position: relative;
+	margin-right: 12px;
+}
+.select-arrow{
+	position: absolute;
+	right: 20px;
+	background: url('../img/double-arrow.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.tt{
+	color:$blue-1;
+	width: 100%;
+}
 /* ==========================================================================
 Table
 ========================================================================== */
@@ -1307,13 +1432,24 @@ Animation
 /* ==========================================================================
 Media Queries
 ========================================================================== */
-// @media (max-width: 1024px) {
-//   .deck {
-//     .card {
-//       width: calc(50% - 10px);
-//     }
-//   }
-// }
+
+@media (min-width: 300px) {
+  .graphic{
+		padding: 0 30px;
+	}
+	.legend{
+		padding: 10px 20px;}
+}
+
+@media (min-width: 1800px) {
+
+  .graphic{
+		padding: 0px 140px;
+	}
+	.legend{
+		padding: 10px 130px;}
+}
+
 @media (max-width: 980px) {
 	.deck {
 		.card {
@@ -1331,6 +1467,9 @@ Media Queries
 	}
 }
 @media (max-width: 800px) {
+	.card{
+		width: 100%;
+	}
 	aside {
 		display: none;
 	}
