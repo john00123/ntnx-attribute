@@ -2438,6 +2438,9 @@ Media Queries
   .sidebar {
     display: none;
   }
+  .no-sidebar {
+    margin-left: -20px;
+  }
   .container {
     min-width: 320px;
   }
@@ -2456,6 +2459,9 @@ Media Queries
   }
   .sidebar {
     display: initial;
+  }
+  .no-sidebar {
+    margin-left: 0;
   }
 }
 

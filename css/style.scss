@@ -587,6 +587,7 @@ summary{
 
 .card-body {
 	padding: 23px 20px;
+	
 	table tr td{
 		width: 100%;
 	}
@@ -1463,6 +1464,10 @@ Media Queries
 	.sidebar {
 		display: none;
 	}
+
+	.no-sidebar{
+		margin-left: -20px;
+	}
 	.container {
 		min-width: 320px;
 	}
@@ -1484,6 +1489,9 @@ Media Queries
 		display: initial;
 	}
 
+	.no-sidebar{
+		margin-left: 0;
+	}
 }
 @media (max-width: 420px) {
 	h4 code {
