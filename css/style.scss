@@ -164,8 +164,8 @@ aside {
 
 .sidebar{
 	border-right: 1px solid $border-color-3;
-	height: 160px;
-	margin-top: -5px;
+	height: 150px;
+	margin-top: -15px;
 	padding-top: 10px;
 }
 
@@ -182,10 +182,22 @@ aside {
 	}
 }
 
+.number{
+	position: absolute;
+	left: -10px;
+	top: -15px;
+	font-size: 12px;
+	font-weight: 500;
+	color: $font-color-2;
+}
+
+.blue{color: $blue-1;}
+
 .graphic{
 	@include size(100%, 100%);
 	@include flex(flex-end, space-between, row);
 	padding: 0 30px;
+	position: relative;
 }
 
 
@@ -193,16 +205,21 @@ aside {
 	@include flex(stretch, flex-end, column);
 	@include size( 80%, 8px);
 	flex-direction: column-reverse;
+	position: relative;
+	&:hover{
+		cursor: pointer;
+	}
 }
 
 .free{
-	background-color: $blue-1;
+	background-color: $border-color-2;
 	flex-grow: 1;
 	border-radius: 1px 1px 0 0 ;
+	position: relative;
 }
 
 .used{
-	background-color: $border-color-2;
+	background-color: $blue-1;
 }
 
 .no-sidebar{
@@ -587,7 +604,7 @@ summary{
 
 .card-body {
 	padding: 23px 20px;
-	
+
 	table tr td{
 		width: 100%;
 	}

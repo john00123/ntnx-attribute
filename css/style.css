@@ -663,8 +663,8 @@ aside .sidebar-selected:hover {
 
 .sidebar {
   border-right: 1px solid #F2F4F6;
-  height: 160px;
-  margin-top: -5px;
+  height: 150px;
+  margin-top: -15px;
   padding-top: 10px;
 }
 
@@ -687,6 +687,19 @@ aside .sidebar-selected:hover {
   color: #627386;
 }
 
+.number {
+  position: absolute;
+  left: -10px;
+  top: -15px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #627386;
+}
+
+.blue {
+  color: #22A5F7;
+}
+
 .graphic {
   height: 100%;
   width: 100%;
@@ -696,6 +709,7 @@ aside .sidebar-selected:hover {
   justify-content: space-between;
   flex-direction: row;
   padding: 0 30px;
+  position: relative;
 }
 
 .graph-container {
@@ -707,16 +721,22 @@ aside .sidebar-selected:hover {
   width: 8px;
   box-sizing: border-box;
   flex-direction: column-reverse;
+  position: relative;
+}
+
+.graph-container:hover {
+  cursor: pointer;
 }
 
 .free {
-  background-color: #22A5F7;
+  background-color: #D5DAE0;
   flex-grow: 1;
   border-radius: 1px 1px 0 0;
+  position: relative;
 }
 
 .used {
-  background-color: #D5DAE0;
+  background-color: #22A5F7;
 }
 
 .no-sidebar {
