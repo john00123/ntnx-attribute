@@ -687,13 +687,67 @@ aside .sidebar-selected:hover {
   color: #627386;
 }
 
-.number {
+.tooltip {
+  height: auto;
+  width: 90px;
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 20;
   position: absolute;
-  left: -10px;
-  top: -15px;
+  left: -15px;
+  top: -60px;
+  box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.02), 0 3px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 1px 0 rgba(0, 0, 0, 0.02);
+  padding: 15px 20px;
+  box-sizing: content-box;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip::after {
+  content: '.';
+  color: transparent;
+  position: absolute;
+  bottom: -3px;
+  left: 15px;
+  background-color: white;
+  height: 8px;
+  width: 8px;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+  border-radius: 1px;
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip h3 {
   font-size: 12px;
-  font-weight: 500;
-  color: #627386;
+}
+
+.tooltip .available, .tooltip .consumed {
+  display: flex;
+  align-items: center;
+}
+
+.tooltip .available::before, .tooltip .consumed::before {
+  content: " .";
+  color: transparent;
+  height: 6px;
+  width: 6px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tooltip .available {
+  margin-bottom: 12px;
+}
+
+.tooltip .available::before {
+  background-color: #D5DAE0;
+}
+
+.tooltip .consumed::before {
+  background-color: #22A5F7;
 }
 
 .blue {

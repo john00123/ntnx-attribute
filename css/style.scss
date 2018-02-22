@@ -182,14 +182,60 @@ aside {
 	}
 }
 
-.number{
+.tooltip{
+	// background-color: red;
+	@include size(auto, 90px);
+	background-color: white;
+	z-index: 20;
 	position: absolute;
-	left: -10px;
-	top: -15px;
-	font-size: 12px;
-	font-weight: 500;
-	color: $font-color-2;
+	left: -15px;
+	top: -60px;
+	@include shadow;
+	padding: 15px 20px;
+	box-sizing: content-box;
+	border-radius: 4px;
+	box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
+
+
+	&::after{
+		content: '.';
+		color: transparent;
+		position: absolute;
+		bottom: -3px;
+		left: 15px;
+		background-color: white;
+		@include size( 8px, 8px);
+		transform: rotate(45deg);
+		border-radius: 1px;
+		box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.1);
+	}
+
+	h3{
+		font-size:12px;
+	}
+	.available, .consumed{
+		display: flex;
+		align-items: center;
+		&::before{
+			content:" .";
+			color: transparent;
+			@include size(6px, 6px);
+			margin-right: 10px;
+			display: inline-block;
+			border-radius: 4px;
+		}
+	}
+	.available{
+		&::before{background-color: $border-color-2;}
+		margin-bottom: 12px;
+	}
+
+	.consumed{
+		&::before{background-color: $blue-1;}
+	}
 }
+
+
 
 .blue{color: $blue-1;}
 

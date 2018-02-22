@@ -1,13 +1,15 @@
-
-$('.graph-container').find(".free").append(`<kbd class='number'><span>23</span>/50</kbd>`);
+//
+// $('.graph-container').find(".free").append(`<div class='tooltip'><p class='number'><kbd class='blue'>23</kbd>/50</p></div>`);
+//
 
 $('.graph-container').mouseenter(function() {
-  $(this).find(".free").append(`<kbd class='number'><kbd class='blue'>23</kbd>/50</kbd>`);
-  // $(this).find(".used").append(`<kbd class='number'>20 Consumed</kbd>`);
-  $('.graph-container').not(this).css('opacity','0.3');
+  $(this).find(".free").append(`
+    <div class='tooltip'>
+      <h3 class='available'> 23 Available </h3>
+      <h3 class='consumed'> 27 Used</h3>
+    </div>`);
 });
 
-$('.free').mouseleave(function() {
-  $('.number').remove();
-  $('.graph-container').not(this).css('opacity','1');
+$('.graph-container').mouseleave(function() {
+  $('.tooltip').remove();
 });
