@@ -34,7 +34,7 @@ const popupData = {
 
     //0
     `
-      <iframe src='http://license-v2.netlify.com'></iframe>
+      <iframe src='https://license-v2.netlify.com'></iframe>
     <input type="file" id='file'>
     <label for='path2'>Select file</label>
 
