@@ -328,6 +328,7 @@ p a:hover {
   padding: 11px 15px;
   color: #FFFFFF;
   font: 400 14px/10px "nutanix_soft", san-serif;
+  font-weight: 500;
   border: none;
   text-decoration: none;
   background-color: #22A5F7;
@@ -919,13 +920,13 @@ header .right {
   padding: 11px 15px;
   color: #FFFFFF;
   font: 400 14px/10px "nutanix_soft", san-serif;
+  font-weight: 500;
   border: none;
   text-decoration: none;
   background-color: #22A5F7;
   outline: none;
   position: relative;
-  padding-left: 30px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .actions .primary:hover {
@@ -946,29 +947,13 @@ header .right {
   line-height: 9pt;
 }
 
-.actions .primary::after, .actions .primary::before {
-  position: absolute;
-  content: " ";
-  background-color: #fff;
-  width: 8px;
-  height: 2px;
-  left: 16px;
-  top: 50%;
-  margin-top: -1px;
-  border-radius: 1px;
-}
-
-.actions .primary::after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
 .actions .primary-alt {
   margin: 0;
   border-radius: 4px;
   padding: 11px 15px;
   color: #FFFFFF;
   font: 400 14px/10px "nutanix_soft", san-serif;
+  font-weight: 500;
   border: none;
   text-decoration: none;
   background-color: #22A5F7;
@@ -1956,6 +1941,7 @@ Popup
   padding: 11px 15px;
   color: #FFFFFF;
   font: 400 14px/10px "nutanix_soft", san-serif;
+  font-weight: 500;
   border: none;
   text-decoration: none;
   background-color: #22A5F7;
@@ -2222,6 +2208,7 @@ Popup
   padding: 11px 15px;
   color: #FFFFFF;
   font: 400 14px/10px "nutanix_soft", san-serif;
+  font-weight: 500;
   border: none;
   text-decoration: none;
   background-color: #22A5F7;

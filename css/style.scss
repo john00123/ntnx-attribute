@@ -374,26 +374,7 @@ header {
 	.primary {
 		@include primary;
 		position: relative;
-		padding-left: 30px;
-		font-weight: 600;
-
-		&::after,
-		&::before {
-			position: absolute;
-			content: " ";
-			background-color: #fff;
-			width: 8px;
-			height: 2px;
-			left: 16px;
-			top: 50%;
-			margin-top: -1px;
-			border-radius: 1px;
-		}
-
-		&::after {
-			-webkit-transform: rotate(90deg);
-			transform: rotate(90deg);
-		}
+		font-weight: 500;
 	}
 
 	.primary-alt {
@@ -1061,7 +1042,7 @@ Popup
 .popup-body {
 	@include size(auto,100%);
 	@include flex(center, flex-start, column);
-	@include inputs;
+	@include inputStyle;
 	padding: 30px 20px;
 	background-color: white;
 	max-height: 500px;
