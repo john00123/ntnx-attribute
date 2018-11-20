@@ -5,7 +5,8 @@
 //esc
 
 $(document).keyup(e => {
-  if (e.keyCode === 27) $('.popup-header').click(); //esc key
+  if (e.keyCode === 27) $('.popup-header').click();
+  if (e.keyCode === 27) shutdown(); //esc key
 });
 
 
@@ -149,7 +150,31 @@ function popupContent(i) {
   // countNumbers();
 }
 
+function fullPopupContent(i) {
+  $('body').append(
+    `<div class="overlay" style='opacity:0'>
+      <div class="full-popup" style='opacity:0'>
+        <div class="full-popup-body">${popupData.body[i]}</div>
+      </div>
+    </div>`
+  );
+  multiPopup();
+  uploadFile();
+  popAnimate();
+  $('.full-popup').addClass('appear');
+  // applyLicense();
 
+}
+
+function shutdown(){
+  $('.full-popup').addClass('disappear');
+  $('.overlay').fadeOut();
+  $('.overlay').removeClass('show');
+  $('html').css('overflow', '');
+  setTimeout(function() {
+    $('.overlay').remove();
+  }, 400);
+}
 //popup animation
 
 function popAnimate() {
@@ -325,7 +350,7 @@ $(document).ready(function() {
     $('.popup-header').text('Unlicense Cluster');
   });
 
-  $('.cluster-license').click(() => popupContent(0));
+  $('.cluster-license').click(() => fullPopupContent(0));
 
   //adons
   $('.manage-addons-popup').click(() => {

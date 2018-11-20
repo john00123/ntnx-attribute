@@ -943,6 +943,12 @@ Popup
 	@include shadow;
 }
 
+.full-popup {
+	@include size(100%,100vw);
+	min-height: 100vh;
+	@include shadow;
+}
+
 .flexbox-stretch {
 	display: flex;
 	width: 100%;
@@ -1038,7 +1044,12 @@ Popup
 	}
 }
 
-
+.full-popup-body{
+	@include size(100%,100%);
+	iframe{
+		@include size(100%, 100%);
+	}
+}
 .popup-body {
 	@include size(auto,100%);
 	@include flex(center, flex-start, column);

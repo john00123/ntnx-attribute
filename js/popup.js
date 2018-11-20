@@ -34,21 +34,11 @@ const popupData = {
 
     //0
     `
-    <h3 style='margin-bottom:0px'>
-      Select your cluster summary file
-    </h3>
-
-    <p style='margin-bottom:20px; width:100%'>
-      This has the data needed to license your cluster.
-    </p>
-
+      <iframe src='http://license-v2.netlify.com'></iframe>
     <input type="file" id='file'>
     <label for='path2'>Select file</label>
 
-    <div class='upload-file'>
-      <input class='path' readonly type='text' id='path2'></input>
-      <label class='file-button' for='file'>Select File</label>
-    </div>`,
+    `,
 
 
     //1
