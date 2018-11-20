@@ -328,7 +328,7 @@ function tablePopup() {
 }
 
 
-
+$('.cluster-license').click(() => fullPopupContent(0));
 $(document).ready(function() {
   cardsData();
   cardsData2();

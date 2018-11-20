@@ -433,3 +433,9 @@ function layer2(i) {
 
   });
 }
+
+$('.cluster-license').click(() => fullPopupContent(0));
+$(document).keyup(e => {
+  if (e.keyCode === 27) $('.popup-header').click();
+  if (e.keyCode === 27) shutdown(); //esc key
+});
