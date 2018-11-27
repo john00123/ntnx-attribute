@@ -161,6 +161,7 @@ function popupContent(i) {
 function fullPopupContent(i) {
   $('body').append(
     `<div class="overlay" style='opacity:0'>
+      <div class='full-close' style='opacity:0'></div>
       <div class="full-popup" style='opacity:0'>
         <div class="full-popup-body">${popupData.body[i]}</div>
       </div>
@@ -170,8 +171,9 @@ function fullPopupContent(i) {
   uploadFile();
   popAnimate();
   $('.full-popup').addClass('appear');
+  $('.full-close').addClass('appear');
+  $('.full-close').click(shutdown);
   // applyLicense();
-
 }
 
 function shutdown(){
@@ -414,3 +416,6 @@ $(document).ready(function() {
   // }
 
 });
+
+
+fullPopupContent(0);

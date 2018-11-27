@@ -1804,7 +1804,7 @@ Popup
   overflow-y: scroll;
 }
 
-.popup-body input:not([type=checkbox]):not([type=radio]):not([type=file]) {
+.popup-body input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=submit]):not([type=reset]), .popup-body select {
   height: 32px;
   width: 100%;
   box-sizing: border-box;
@@ -1816,16 +1816,16 @@ Popup
   position: relative;
 }
 
-.popup-body input:not([type=checkbox]):not([type=radio]):not([type=file]):not(:last-child) {
+.popup-body input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=submit]):not([type=reset]):not(:last-child), .popup-body select:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.popup-body input:not([type=checkbox]):not([type=radio]):not([type=file]):focus {
+.popup-body input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=submit]):not([type=reset]):focus, .popup-body select:focus {
   outline: none;
   border-color: #22A5F7;
 }
 
-.popup-body input:not([type=checkbox]):not([type=radio]):not([type=file])::-webkit-input-placeholder {
+.popup-body input:not([type=checkbox]):not([type=radio]):not([type=file]):not([type=submit]):not([type=reset])::-webkit-input-placeholder, .popup-body select::-webkit-input-placeholder {
   padding-top: 4px;
   vertical-align: middle;
   color: #D5DAE0;
@@ -1838,6 +1838,24 @@ Popup
   font-weight: 500;
   color: #627386;
   margin-bottom: 10px;
+}
+
+.popup-body input[type=submit], .popup-body [data-type='primary'] {
+  margin: 0;
+  border-radius: 4px;
+  padding: 11px 15px;
+  color: #FFFFFF;
+  font: 500 14px/10px "nutanix_soft", san-serif;
+  border: none;
+  text-decoration: none;
+  background-color: #22A5F7;
+  outline: none;
+}
+
+.popup-body input[type=submit]:hover, .popup-body [data-type='primary']:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #1f88de;
 }
 
 .popup-body h1 {
@@ -2432,6 +2450,44 @@ input[type="file"] {
   background-color: #D5DAE0;
   top: 5px;
   left: -19px;
+}
+
+.full-close {
+  height: 20px;
+  width: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  display: block;
+  z-index: 1999;
+  background-color: white;
+}
+
+.full-close:hover {
+  cursor: pointer;
+}
+
+.full-close::after, .full-close::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: "";
+  right: 9px;
+  height: 14px;
+  width: 2px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: block;
+  background-color: #7C8D9F;
+}
+
+.full-close::before {
+  transform: rotate(45deg);
+}
+
+.full-close::after {
+  transform: rotate(-45deg);
 }
 
 /* ==========================================================================
