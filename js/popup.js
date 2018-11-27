@@ -34,7 +34,7 @@ const popupData = {
 
     //0
     `
-      <iframe src='https://license-v2.netlify.com'></iframe>
+    <iframe src='https://license-v2.netlify.com'></iframe>
     <input type="file" id='file'>
     <label for='path2'>Select file</label>
 
@@ -215,9 +215,16 @@ const popupData = {
     <div class='popup-card' style='width:100%; margin-top:10px;'> <h3 style='text-align:left; margin-left:15px;'>LIC-123123123 <kbd>&nbsp;&nbsp;450 Coins &nbsp; exp.12/12/2020</kbd></h3></div>
 
     </div>
+    `,
 
+    //8
 
     `
+    <iframe src='https://license-v2-a.netlify.com'></iframe>
+    <input type="file" id='file'>
+    <label for='path2'>Select file</label>
+
+    `,
   ],
 
   footer: [

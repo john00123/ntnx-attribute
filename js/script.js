@@ -7,6 +7,14 @@
 $(document).keyup(e => {
   if (e.keyCode === 27) $('.popup-header').click();
   if (e.keyCode === 27) shutdown(); //esc key
+  if (e.keyCode === 18) $('.cluster-license').toggle();
+  if (e.keyCode === 18) $('.cluster-license2').toggle();
+  if (e.keyCode === 18) if ($('.cluster-license2').is(':visible')){
+    alert('You are now in the UNLICENSE flow');
+  } else{
+    alert('You are now in the license flow');
+  }
+
 });
 
 
@@ -348,8 +356,8 @@ $(document).ready(function() {
     popupContent(1);
     $('.popup-header').text('Unlicense Cluster');
   });
-
   $('.cluster-license').click(() => fullPopupContent(0));
+  $('.cluster-license2').click(() => fullPopupContent(8));
 
   //adons
   $('.manage-addons-popup').click(() => {
