@@ -416,6 +416,3 @@ $(document).ready(function() {
   // }
 
 });
-
-
-fullPopupContent(0);
